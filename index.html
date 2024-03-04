@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .naslov{
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(100px, 1fr));
+      gap: 10px;
+
+    }
+
+    .image {
+      text-align: center;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      background-color: deepskyblue;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .image p {
+      margin-top: 0px;
+      font-size: 10px;
+      color: black;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .gallery {
+        grid-template-columns: repeat(1 ,1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="naslov">
+    <h1>Gallery</h1>
+  </div>
+  <div class="gallery">
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <div class="image">
+      <img src="galerija.png" alt="Slika">
+      <p>Image Title</p>
+    </div>
+    <!-- Add more image divs here -->
+  </div>
+</div>
+</body>
+</html>
